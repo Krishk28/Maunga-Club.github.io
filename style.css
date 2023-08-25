@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: customfont;
+    src: url('Carter_One/CarterOne-Regular.ttf') format('truetype');
+}
+
+.header1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/mountain_view_1.png); /* Background Transperancy*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/kereru/cabin_exterior.jpg);/* Background Transperancy*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.header2 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/kakapo/cabin_view.jpg);/* Background Transperancy*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+footer {
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+    position: absolute;
+}
+
+footer small {
+    color: #999;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    padding: 1.5% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 230px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1766a3;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%; /* Navigation hover transition */
+}
+
+.content {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 62px;
+    font-family: customfont, sans-serif; /* Adding Imported Custom Font */
+}
+
+.content p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid #1766a3;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+    /* Ease function to slow transition to stop it from moving the title */
+}
+
+span {
+    background: #1766a3;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    /* Places Color Behind the text as the text is z-index:0 */
+    transition: 0.5s ease;
+}
+
+button:hover {
+    border: groove;
+    /* Transition Effect */
+}
+
+button:hover span {
+    width: 100%;
+}
+
+.Home_button {
+    color: white;
+}
+
+.Chalets-We-offer {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.Chalets-We-offer ul li {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 3px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #f3f8ff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 2);
+    /* Box shadow transition when you hover over the box */
+}
+
+.gallery-thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adds Gaps Between the Images */
+    padding: 0.5cm 4cm;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-thumbs img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.Facilites {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.Start_Booking_Button {
+    color: #000000;
+}
+
+.Start_Booking_Button:hover {
+    color: white;
+}
+
+.signup-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 2px solid #1766a3;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    border: 2px solid #1766a3;
+    background: #1766a3;
+    color: #fff;
+    transition: 1s;
+}
+
+
+.signup-form-box {
+    border: 1px solid #ccc;
+    margin: 25px 0;
+    padding: 10px 20px;
+}
+
+.signup-form-box h3, .Booking_Info h3{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form input,
+.signup-form textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.Booking_text{
+    text-align: center;
+    font-size: 14.5px;
+color: #666;
+}
